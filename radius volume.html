@@ -1,0 +1,20 @@
+<html>
+ <body>
+  <form>
+   Radius<br>
+   <input type='text'id='t1'><br>
+  Volume<br>
+   <input type='text'id='t2'><br>
+    <input type='button'value='calculate' onclick='show()'>
+  </form>
+ </body>
+</html>
+
+<script>
+  function show()
+{
+  var r=document.getElementById('t1').value;
+  var v=4/3*3.14*r*r*r;
+   document.getElementById('t2').value=v;
+}
+</script>
