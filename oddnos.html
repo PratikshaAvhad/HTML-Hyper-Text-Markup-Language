@@ -1,0 +1,22 @@
+<html>
+ <body>
+  <form>
+    enter number:
+    <input type='text'id='t1'><br>
+    <input type='button'value='ok' onclick='show()'>
+  </form>
+ </body>
+</html>
+  
+<script>
+  function show()
+ {
+   n=document.getElementById('t1').value;
+     document.write('odd numbers=');
+  for(i=1;i<=n;i++)
+  {
+    if(i%2==1)
+      document.write("<br>"+i);
+  }
+ }
+</script>  
