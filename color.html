@@ -1,0 +1,38 @@
+<html>
+ <body>
+  <form>
+   enter number:
+  <input type='text' id='t1' onmousemove='show1()'onmouseout='show2()'><br>
+  <input type='text' id='t2' onmousemove='show3()'onmouseout='show4()'><br>
+  <input type='button'value='ok'onclick='add()'>
+ </form>
+ </body>
+</html>
+  
+<script>
+ function show1()
+{
+ document.getElementById('t1').style.background='pink';
+} 
+function show2()
+{
+ document.getElementById('t1').style.background='white';
+} 
+function show3()
+{
+ document.getElementById('t2').style.background='pink';
+} 
+function show4()
+{
+ document.getElementById('t2').style.background='white';
+} 
+function add()
+{
+ a=document.getElementById('t1').value;
+ b=document.getElementById('t2').value;
+   a=parseInt(a);
+   b=parseInt(b);
+    c=a+b;
+      document.write('addition='+c);
+}
+</script>
