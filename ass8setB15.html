@@ -1,0 +1,50 @@
+<html>
+ <body>
+  <form>
+   Enter Name:
+  <input  type='text' id='t1'><br>
+   Enter Address:
+  <textarea id='t2'></textarea><br>
+   Enter City:
+  <input type='text' id='t3'><br>
+   Enter Pincode:
+  <input type='text' id='t4'><br>
+   <input type='button' value='login' onclick='show()'>
+ </form>
+</body>
+</html>
+
+<script>
+  function show()
+{
+ var s1=document.getElementById('t1').value;
+ var s2=document.getElementById('t2').value;
+ var s3=document.getElementById('t3').value;
+ var s4=document.getElementById('t4').value;
+
+  var f=0;
+ if(s1==' ')
+{
+ alert('must enter name');
+  f=1;
+}
+ for(i=0;i<s1.length;i++)
+{
+ if(s1.charAt(i)>='0' && s1.charAt(i)<='9')
+{
+ alert('name contains only alphabets');
+  f=1;
+  break;
+}
+}
+   if(s4.length!=6)
+    alert('pincode must be 6 digits');
+   if(f==0)
+{
+ document.write('<br> Name='+s1);
+ document.write('<br> Address='+s2); 
+ document.write('<br> City='+s3);
+ document.write('<br> Pincode='+s4);
+}
+}
+</script> 

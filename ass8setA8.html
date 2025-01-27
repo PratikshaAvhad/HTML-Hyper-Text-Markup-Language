@@ -1,0 +1,42 @@
+<html>
+  <body>
+   <form>
+    Enter username:
+    <input type='text'id='t1'><br>
+    <input type='button'value='submit'onclick='greet()'>
+   </form>
+ </body>
+</html>
+
+<script>
+  function greet()
+{
+  var u=document.getElementById('t1').value;
+  var d1=new date();
+   document.write('<br> date & time='+d1);
+    
+     var h=d1.getHours();
+       if(h>12 && h<=16)
+          document.write('<br>'Good Afternoon'+u);
+       else if(h>16 && h<=20)
+          document.write('<br>'Good Evening'+u);
+       else if(h>20 && h<=24)
+          document.write('<br>'Good Night'+u);
+       else
+         document.write('<br>'Good Morning'+u);
+}
+</script>
+
+
+
+   
+
+
+   
+
+
+   
+
+
+
+   
