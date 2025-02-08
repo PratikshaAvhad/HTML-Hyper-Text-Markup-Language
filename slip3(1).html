@@ -1,0 +1,41 @@
+
+<html>
+ <body>
+  <form>
+   Enter Number:
+   <input type='text'id='t1'><br>
+   <input type='button'value='sum of digits'onclick='digit_sum()'>
+ </form>
+ </body>
+</html>
+
+<script>
+ function digit_sum()
+{
+ var n=document.getElementById('t1').value;
+ s=0;
+ while(n>0)
+ {
+  d=n%10;
+  s=s+d;
+  n=parseInt(n/10);
+ }
+document.write('sum of digits='+s);
+}
+</script>
+
+
+---------------------------------------------------------------------------
+
+<script>
+ var n=prompt('enter no');
+ n=parseInt(n);
+  var s=0;
+ while(n>0)
+{
+ d=n%10;
+ s=s+d;
+ n=parseInt(n/10)
+}
+ document.write(<br>sum of digit=+s); 
+</script>

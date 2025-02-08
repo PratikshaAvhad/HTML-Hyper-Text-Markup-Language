@@ -1,0 +1,23 @@
+
+<html>
+ <body>
+  <form>
+    <input type='button'value='largest no' onclick='show()'>
+  </form>
+ </body>
+</html>  
+
+<script>
+  function show()
+  {
+  var a=prompt('enter first no');
+  var b=prompt('enter second no');
+  var c=prompt('enter third no');
+  if(a>b && a>c)
+    document.write('largest no='+a);
+  else if(b>a && b>c)
+    document.write('largest no='+b);
+  else
+    document.write('largest no='+c);
+  }
+</script>

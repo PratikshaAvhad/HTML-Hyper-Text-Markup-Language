@@ -1,0 +1,18 @@
+<script>
+  {
+   var n=prompt('enter number');
+   n=parseInt(n)
+   s=0;
+   var temp=n;
+  while(n>0)
+ {
+  d=n%10;
+  s=s+d*d*d;
+  n=parseInt(n/10);
+ }
+  if(s==temp)
+    alert('number is armstrong');
+  else
+    alert('number is not  armstrong');
+}
+</script>

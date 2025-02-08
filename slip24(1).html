@@ -1,0 +1,17 @@
+<script>
+ n=prompt('enter number');
+ sum_digit(n);
+
+ function sum_digit(n)
+{
+ s=0;
+ while(n>0)
+{
+ d=n%10;
+ n=parseInt(n/10)
+ if(d%2==1)
+   s=s+d;
+}
+ document.write('sum of odd digits='+s);
+}
+</script>
